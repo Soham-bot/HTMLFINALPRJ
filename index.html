@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refer & Earn - B.Tech CSE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <div class="container header-content">
+    <img
+      src="https://www.itm.edu/institute-of-design-and-media/assets/logo/ISU%20IDM%20LOGO.webp?1728381234"
+      alt="ITM Logo"
+      class="logo"
+    />
+    <div class="text-group">
+  <h1><span style="color: #ff9900;">Refer & Earn</span> 🎁</h1>
+  <h2>Win an iPhone 15 or ₹60,000*</h2>
+  <p>For every successful admission you refer to us!</p>
+  <button id="referBtn" class="cta-btn">Generate My Referral Link</button>
+<button id="copyBtn" class="cta-btn copy-btn" style="display: none;">Copy Link 📋</button>
+<input type="text" id="referralLinkInput" style="opacity: 0; position: absolute; left: -9999px;" readonly />
+
+</div>
+
+</header>
+
+  </div>
+</header>
+<div class="container banners-row">
+  <section class="banner-image">
+    <a href="https://media.itm.ac.in/Btech_Flyer_NEW_2025_690149b7de.pdf" target="_blank">
+      <img src="https://media.itm.ac.in/Btech_Flyer_NEW_2025_690149b7de.pdf" alt="Flyer Banner" />
+    </a>
+  </section>
+  <section class="banner-image">
+    <a href="https://cdn.itm.edu/assets/Btech_brochure_1_b796f97ff4.pdf" target="_blank">
+      <img src="https://cdn.itm.edu/assets/Btech_brochure_1_b796f97ff4.pdf" alt="Brochure Banner" />
+    </a>
+  </section>
+</div>
+
+
+
+
+  <section class="program-highlights">
+    <div class="highlight">
+      <img src="https://img.icons8.com/color/96/000000/internship.png" alt="Internship Icon" />
+      <h3>1 Year Paid Internship 💼</h3>
+      <p>Gain hands-on experience with top tech companies.</p>
+    </div>
+    <div class="highlight">
+      <img src="https://img.icons8.com/ios/50/developer-mode--v1.png" alt="Projects Icon" />
+      <h3>Develop Real Projects 💻</h3>
+      <p>Create applications like Zomato, Hotstar, PayTM, and more.</p>
+    </div>
+    <div class="highlight">
+      <img src="https://img.icons8.com/color/96/000000/teacher.png" alt="Experts Icon" />
+      <h3>Learn from Industry Experts 👩‍🏫</h3>
+      <p>Courses designed by Unicorn Founders, CTOs, and VPs.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>📝 Fill the Form to Get Reward 🎁</h2>
+    <form id="referralForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="mobile" placeholder="Your Mobile Number" required />
+      <select id="relationship" required>
+        <option value="" disabled selected>How are you related to ITM? 🤔</option>
+        <option value="Current Student">Current Student</option>
+        <option value="Future Student">Future Student</option>
+        <option value="Faculty Member">Faculty Member</option>
+        <option value="Alumni">Alumni</option>
+        <option value="LU SAP">LU SAP</option>
+        <option value="12thclass.com">12thclass.com</option>
+      </select>
+      <button type="submit">Submit ✅</button>
+    </form>
+    <div class="success-message" id="successMessage">🎉 Thank you for your referral! We'll be in touch soon.</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
